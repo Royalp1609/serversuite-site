@@ -1,0 +1,82 @@
+site_name: Server Suite
+site_description: Mods, modpacks, backups, version switching, subdomains and more for the Pterodactyl game server panel.
+site_url: https://royalp1609.github.io/serversuite-site/
+repo_name: royalp1609/serversuite-pterodactyl
+repo_url: https://github.com/royalp1609/serversuite-pterodactyl
+copyright: Server Suite is free software under the AGPL-3.0. Not affiliated with Pelican, Pterodactyl, Mojang or Microsoft.
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle: { icon: material/weather-night, name: Dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle: { icon: material/weather-sunny, name: Light mode }
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc: { permalink: true }
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed: { alternate_style: true }
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Features:
+      - features/index.md
+      - Mods & plugins: features/mods.md
+      - Config editor: features/configs.md
+      - Modpacks: features/modpacks.md
+      - Backups: features/backups.md
+      - Versions & loaders: features/versions.md
+      - Server properties: features/properties.md
+      - Players: features/players.md
+      - Errors & crash help: features/errors.md
+      - Bedrock crossplay: features/crossplay.md
+      - Velocity networks: features/velocity.md
+      - Subdomains & status cards: features/subdomains.md
+      - Notifications: features/notifications.md
+      - Rust & Valheim: features/games.md
+  - Install:
+      - install/index.md
+      - Pterodactyl: install/pterodactyl.md
+      - Updating: install/updating.md
+  - Admins:
+      - admin/index.md
+      - Settings: admin/settings.md
+      - Permissions: admin/permissions.md
+      - Billing API: admin/billing-api.md
+  - FAQ: faq.md
+  - Troubleshooting: troubleshooting.md
