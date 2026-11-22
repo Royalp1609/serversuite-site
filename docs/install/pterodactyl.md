@@ -22,8 +22,8 @@ sudo chown -R www-data:www-data packages/serversuite
 
 # Point Composer at it, then require it
 sudo -u www-data composer config repositories.serversuite '{"type": "path", "url": "packages/serversuite"}'
-# @dev lets Composer accept pre-release versions such as 1.0.0-rc.1
-sudo -u www-data composer require "pterodactyl-serversuite/serversuite:*@dev"
+# @rc lets Composer accept release candidates such as 1.0.0-rc.1 as well as stable releases
+sudo -u www-data composer require "pterodactyl-serversuite/serversuite:*@rc"
 grep '"version"' vendor/pterodactyl-serversuite/serversuite/composer.json   # check the version
 
 sudo -u www-data php artisan migrate --force
@@ -56,7 +56,7 @@ cd /var/www/pterodactyl
 # 1. Upgrade Blueprint to a release that supports the new panel version (Blueprint's guide)
 # 2. Re-add the backend
 sudo -u www-data composer config repositories.serversuite '{"type": "path", "url": "packages/serversuite"}'
-sudo -u www-data composer require "pterodactyl-serversuite/serversuite:*@dev"
+sudo -u www-data composer require "pterodactyl-serversuite/serversuite:*@rc"
 sudo -u www-data php artisan migrate --force
 sudo -u www-data php artisan optimize:clear
 sudo -u www-data php artisan queue:restart
