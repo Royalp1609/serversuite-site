@@ -5,7 +5,7 @@
 **Licence:** AGPL-3.0-only · free
 **Requires:** Pterodactyl 1.14 or 1.15 · Blueprint beta-2026-08+ (1.15) · plus the Server Suite
 backend Composer package (both files are on every release)
-**Links:** Website `https://royalp1609.github.io/serversuite-site/` · Install guide `https://royalp1609.github.io/serversuite-site//install/pterodactyl/` · Source `https://github.com/royalp1609/serversuite-pterodactyl`
+**Links:** Website `https://royalp1609.github.io/serversuite-site/` · Install guide `https://royalp1609.github.io/serversuite-site/install/pterodactyl/` · Source `https://github.com/royalp1609/serversuite-pterodactyl`
 
 ## Short description
 Mod manager, modpacks, scheduled backups, version switching, configs, players and Cloudflare
@@ -35,7 +35,7 @@ Uses Pterodactyl's own subuser permissions (new **Mods** and **Subdomains** grou
 
 ## Install
 Install the backend package first (`composer require`), then `blueprint -install serversuite`.
-Full steps: `https://royalp1609.github.io/serversuite-site//install/pterodactyl/`.
+Full steps: `https://royalp1609.github.io/serversuite-site/install/pterodactyl/`.
 
 ## Screenshots (in order)
 1. `pterodactyl/mods-browse.png`
