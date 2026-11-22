@@ -21,7 +21,7 @@ players, subdomains and notifications, as new pages on every server.
 
 </div>
 
-![The Mods page: browse Modrinth, CurseForge and Hangar](assets/screenshots/pterodactyl/mods-browse.png){ .shot }
+![Installing a plugin: search, pick a version, install behind a backup, see it in Manage](assets/screenshots/pterodactyl/mod-install.gif){ .shot }
 
 ## What it adds
 
