@@ -6,7 +6,7 @@ Pterodactyl extension reinstalled. Take a panel backup before updating.
 ```bash
 cd /var/www/pterodactyl
 # replace the contents of packages/serversuite with the new backend zip
-sudo -u www-data composer require "pterodactyl-serversuite/serversuite:*@dev"
+sudo -u www-data composer require "pterodactyl-serversuite/serversuite:*@rc"
 grep '"version"' vendor/pterodactyl-serversuite/serversuite/composer.json   # check it
 sudo -u www-data php artisan migrate --force
 sudo -u www-data php artisan optimize:clear
